@@ -1,0 +1,416 @@
+/* Reset básico */
+body, h1, h2, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fdeede;
+    color: #333;
+    text-align: center; 
+}
+
+header {
+    background-color: #256145;
+    color: white;
+    padding: 10px 0;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#apresentacao-horta {
+    background-color: #f8efe4; 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#apresentacao-horta h1 {
+    color: #000000; 
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#apresentacao-horta h2 {
+    color: #0f110c; 
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#apresentacao-horta p {
+    color: #333; 
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.imagem-centralizada {
+    text-align: center;
+    margin: 20px 0; 
+}
+
+.imagem-centralizada img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+
+.depoimentos h3 {
+    color: #256145; 
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .depoimentos p {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .depoimentos .card-item {
+    background-color: #99da9c;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+  }
+  
+  .depoimentos .card-item img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .depoimentos .card-item .depoimentos-name {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+  }
+  
+  .depoimentos .card-item .depoimentos-text {
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.3s;
+  }
+  
+.rodape {
+    background-color: #256145;
+    color: white;
+    padding: 10px 0;
+}
+
+.rodape p {
+    margin: 0;
+}
+
+
+/* Tabela de produtos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #6b8e23;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+}
+
+table tr:hover {
+    background-color: #f2f2f2;
+}
+
+table input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.produtos {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #256145;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #f2f2f2;
+}
+
+table input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.total {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+button {
+    background-color: #256145;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block; 
+    margin: 10px; 
+}
+
+button:hover {
+    background-color: #1d4d29; 
+}
+
+/* Formulário de contato */
+.form-contato {
+    max-width: 500px; 
+    padding: 15px; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    border: none; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    margin: 20px auto; 
+}
+
+.form-contato h2 {
+    font-size: 24px; 
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+.form-contato label {
+    display: block;
+    margin-bottom: 8px; 
+    font-weight: bold;
+    color: #333;
+}
+
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato input[type="tel"],
+.form-contato textarea {
+    width: 100%;
+    padding: 8px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-contato textarea {
+    resize: vertical; 
+}
+
+.form-contato button {
+    background-color: #256145;
+    color: #fff;
+    border: none;
+    padding: 8px 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.form-contato button:hover {
+    background-color: #539739;
+}
+
+/* Sobre */
+.sobre {
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.sobre h2 {
+    color: #000000;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.sobre p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.sobre ul,
+.sobre ol {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.sobre ul li,
+.sobre ol li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.sobre ul li {
+    list-style-type: disc; 
+}
+
+.sobre ol li {
+    list-style-type: decimal; 
+}
+
+.sobre ol {
+    margin-top: 0;
+    padding-left: 20px;
+}
+
+.sobre strong {
+    color: #6b8e23; 
+}
+
+/* Dicas */
+.dicas-horta {
+    background-color: #f9f9f9; /* Fundo claro para destacar a seção */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.dicas-horta h2 {
+    color: #000000;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.dicas-horta h3 {
+    color: #000000; /* Verde escuro para subtítulos */
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.dicas-horta p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.dicas-horta ul,
+.dicas-horta ol {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.dicas-horta ul li,
+.dicas-horta ol li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.dicas-horta ul li {
+    list-style-type: disc; /* Marcadores para a lista não ordenada */
+}
+
+.dicas-horta ol li {
+    list-style-type: decimal; /* Números para a lista ordenada */
+}
+
+.dicas-horta ol {
+    margin-top: 0;
+    padding-left: 20px;
+}
+
+.dicas-horta a {
+    color: #26ac47; /* Cor azul para links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dicas-horta a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos da Horta Orgânica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="dicas.html">Dicas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo -->
+    <main>
+        <section class="produtos">
+            <h2>Produtos Disponíveis</h2>
+            <!-- Tabela de produtos -->
+            <table>
+                <tr>
+                    <th>Produto</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                </tr>
+                <tr>
+                    <td>Alface Orgânica</td>
+                    <td>Fresca e crocante, direto da horta.</td>
+                    <td>R$ 3,50</td>
+                    <td><input type="number" min="0" value="0" onchange="calcularValor(this, 3.50)"></td>
+                    <td>R$ <span class="valor">0.00</span></td>
+                </tr>
+                <tr>
+                    <td>Tomate Orgânico</td>
+                    <td>Rico em licopeno, sabor inigualável.</td>
+                    <td>R$ 5,00</td>
+                    <td><input type="number" min="0" value="0" onchange="calcularValor(this, 5.00)"></td>
+                    <td>R$ <span class="valor">0.00</span></td>
+                </tr>
+                <tr>
+                    <td>Manjericão Orgânico</td>
+                    <td>Aroma fresco e intenso, perfeito para temperos.</td>
+                    <td>R$ 2,50</td>
+                    <td><input type="number" min="0" value="0" onchange="calcularValor(this, 2.50)"></td>
+                    <td>R$ <span class="valor">0.00</span></td>
+                </tr>
+            </table>
+            <div class="total">
+                Valor Total: R$ <span id="valorTotal">0.00</span>
+            </div>
+            <button type="button" onclick="finalizarCompra()">Finalizar Compra</button>
+            <button type="button" onclick="limparCarrinho()">Limpar</button>
+        </section>
+    </main>
+    <div class="rodape">
+        <p>&copy; 2024 Horta Orgânica. Todos os direitos reservados.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
