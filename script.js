@@ -69,3 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         formulario.reset();
     });
 });
+
+function mudarTema() {
+    document.body.classList.toggle('dark-theme');
+}
