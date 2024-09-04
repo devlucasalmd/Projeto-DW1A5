@@ -71,5 +71,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function mudarTema() {
-    document.body.classList.toggle('dark-theme');
+    document.body.classList.toggle('dark-theme');  // adicionar ou remover uma classe CSS do elemento body
 }
